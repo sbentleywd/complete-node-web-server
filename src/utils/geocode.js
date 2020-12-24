@@ -9,7 +9,7 @@ const geocode = (term, callback) => {
 			callback("Unable to connect to location services", undefined);
 		} else if (body.features.length === 0) {
 			callback(
-				"Unable to find location period try another search",
+				"Unable to find location please try another search",
 				undefined
 			);
 		} else {
