@@ -20,11 +20,8 @@ weatherForm.addEventListener("submit", (event) => {
 					if (jsonResponse.error) {
 						messageOne.textContent = jsonResponse.error;
 					} else {
-						messageOne.textContent = "";
-						messageTwo.textContent =
-							jsonResponse.location +
-							". " +
-							jsonResponse.forecast;
+						messageOne.textContent = jsonResponse.location;
+						messageTwo.textContent = jsonResponse.forecast;
 					}
 				});
 			}
